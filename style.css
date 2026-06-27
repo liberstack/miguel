@@ -1,0 +1,94 @@
+/* ===== RESET ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BASE ===== */
+:root {
+  --bg: #fdf6e3;
+  --text: #2c2c2c;
+  --accent: #b85c2a;
+  --muted: #8a7f72;
+  --page-width: 680px;
+  --font-body: 'Georgia', serif;
+  --size-body: 22px;
+  --line-height: 2;
+}
+
+html {
+  font-size: var(--size-body);
+  background: var(--bg);
+  color: var(--text);
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: var(--line-height);
+  max-width: var(--page-width);
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* ===== TÍTULO PRINCIPAL ===== */
+#content h1 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 48px;
+  letter-spacing: 0.02em;
+}
+
+/* ===== CAPÍTULOS ===== */
+#content h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin-top: 64px;
+  margin-bottom: 24px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent);
+}
+
+/* ===== PARÁGRAFOS ===== */
+#content p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* ===== IMAGENS ===== */
+#content img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 12px;
+  margin: 32px 0;
+}
+
+/* ===== SEPARADOR --- ===== */
+#content hr {
+  border: none;
+  border-top: 1px solid #d4c9b8;
+  margin: 48px 0;
+}
+
+/* ===== FIM ===== */
+#content em {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 480px) {
+  :root {
+    --size-body: 20px;
+  }
+
+  body {
+    padding: 24px 16px 60px;
+  }
+}
